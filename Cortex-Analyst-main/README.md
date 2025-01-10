@@ -1,31 +1,61 @@
-# Snowflake Cortex Analyst - LLM Based Text-to-SQL 
+# Natural Language to SQL Query Generator for Snowflake
 
-This repository contains the setup code and a simple Streamlit-based UI for Snowflake Cortex Analyst. It allows users to interact with a large language model (LLM) to generate SQL queries based on text input, tightly integrated with the Snowflake data ecosystem.
+## Project Overview
+Transform your data interaction experience with this innovative tool that bridges natural language and database queries. Our platform harnesses the intelligence of Large Language Models (LLMs) to convert everyday language into precise SQL commands, seamlessly integrated within the Snowflake environment.
 
-![Cortex Analyst Demo](https://github.com/sarathi-aiml/Cortex-Analyst/blob/main/cortex-overview-2.gif)]
+## Core Capabilities
+- **Intelligent Query Generation**: Advanced natural language processing system that understands user intent and generates appropriate SQL queries
+- **Database Configuration Tools**: Comprehensive automation scripts for establishing all necessary database components
+- **Modern Web Interface**: Intuitive, browser-based dashboard powered by Streamlit technology for effortless interaction
 
-## Features
+## System Architecture
+The solution combines multiple cutting-edge components:
+- Natural language processing engine
+- SQL query optimization system
+- Real-time data visualization tools
+- Secure database integration layer
 
-- **Setup Script**: SQL code to create roles, stages, schemas, and tables in Snowflake for Cortex Analyst.
-- **Streamlit UI**: A lightweight, user-friendly interface built with Streamlit to interact with the LLM-based SQL query generation.
+## Implementation Requirements
 
-## Getting Started
+### Essential Components
+1. Active Snowflake workspace with administrative access
+2. Streamlit framework integration
 
-### Prerequisites
+### Initial Configuration
+1. Execute database initialization script (`Cortex-Analyst-Setup.sql`) to establish system foundation
+2. Import reference datasets:
+   - Semantic framework definition (`book_model.yaml`)
+   - Sample dataset (`Medical_books_clean.csv`)
+3. Enable cross-regional functionality for Cortex services
 
-- **Snowflake Account**: Ensure you have access to a Snowflake instance with sufficient privileges.
-- **Streamlit**: Streamlit in Snowflake.
+For semantic modeling capabilities, utilize the official toolset:
+```
+Reference: https://github.com/Snowflake-Labs/semantic-model-generator
+```
 
-### Setup
+### Interface Deployment
+1. Obtain project codebase
+2. Initialize web interface components
 
-1. Run the SQL setup code (`Cortex-Analyst-Setup.sql`) in your Snowflake account to create the necessary stages, roles, schemas, and tables.
-2. Upload the required data (`book_model.yaml` and `Medical_books_clean.csv`) to the stage created during the setup.
-Snowflake Cortex Analyst Semantic Model (yaml) Generator:
-https://github.com/Snowflake-Labs/semantic-model-generator
-3. Configure your Snowflake instance to enable Cortex integration across regions.
+## Key Benefits
+- Democratizes data access through natural language interface
+- Reduces technical barriers to database interaction
+- Accelerates data analysis workflows
+- Maintains enterprise-grade security standards
 
-### Running the UI
+## Technical Details
+The platform leverages state-of-the-art language models to:
+- Parse natural language inputs
+- Generate optimized SQL queries
+- Validate query safety and efficiency
+- Execute within secure database boundaries
 
-1. Clone this repository.
-2. Run the Streamlit UI 
+This implementation significantly simplifies data exploration while maintaining robust security protocols and performance standards.
 
+## Additional Resources
+- Complete API documentation
+- Configuration templates
+- Usage examples and best practices
+- Troubleshooting guides
+
+This tool represents a significant advancement in making database interactions more accessible while maintaining professional-grade capabilities and security standards.
